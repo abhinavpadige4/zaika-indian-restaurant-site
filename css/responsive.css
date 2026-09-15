@@ -1,0 +1,149 @@
+/* Responsive Breakpoints */
+
+/* Mobile: 320px and up */
+@media (min-width: 320px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+    
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chefs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.95rem;
+    }
+    
+    .booking-form {
+        padding: var(--spacing-sm);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    .social-icons {
+        justify-content: center;
+        margin-top: var(--spacing-sm);
+    }
+}
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav ul {
+        flex-wrap: nowrap;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .tagline {
+        font-size: 1.25rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .chefs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .footer-info {
+        flex: 0 0 30%;
+    }
+    
+    .footer-links {
+        flex: 0 0 30%;
+    }
+    
+    .footer-social {
+        flex: 0 0 30%;
+        text-align: right;
+    }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero .tagline {
+        font-size: 1.5rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .chefs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .testimonial-content p {
+        font-size: 1.1rem;
+    }
+    
+    .booking-form {
+        max-width: 700px;
+    }
+}
+
+/* Large Desktop: 1440px and up */
+@media (min-width: 1440px) {
+    .container {
+        width: 85%;
+        max-width: 1400px;
+    }
+    
+    .hero {
+        min-height: 110vh;
+    }
+    
+    .menu-grid {
+        gap: var(--spacing-xl);
+    }
+    
+    .chefs-grid {
+        gap: var(--spacing-xl);
+    }
+}
